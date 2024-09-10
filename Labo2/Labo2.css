@@ -1,0 +1,25 @@
+
+.colorchange:hover {
+	transition: color 2s;
+	color: darkgreen;
+}
+
+#spining {
+	position: relative;
+	bottom: -86%;
+	right: -95%;
+	width: 50px;
+	height: 50px;
+	border: 2px dotted #303085;
+	border: 2px solid #713ADC;
+	border-radius : 50%; 
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+	0% {transform: rotate(0deg)}
+	50% {transform:rotate(360deg)}
+	100% {transform:rotate(0deg)}
+}
