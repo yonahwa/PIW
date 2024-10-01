@@ -1,0 +1,16 @@
+.bigsquare {
+    position:absolute;
+    top:15%;
+    left:30%;
+    width: 60vh;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.square {
+    border: 2px solid #30083c;
+    background-color: mediumpurple;
+    text-align:center;
+    padding:50%;
+}

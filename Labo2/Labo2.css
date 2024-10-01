@@ -11,7 +11,7 @@
 	width: 50px;
 	height: 50px;
 	border: 2px dotted #303085;
-	border: 2px solid #713ADC;
+	border-top: 2px solid #713ADC;
 	border-radius : 50%; 
 	animation-name: rotate;
 	animation-duration: 3s;
@@ -22,4 +22,24 @@
 	0% {transform: rotate(0deg)}
 	50% {transform:rotate(360deg)}
 	100% {transform:rotate(0deg)}
+}
+
+.rainbow:hover{
+	animation-name: wow;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes wow{
+	0%{color:blue}
+	10%{color:blueviolet}
+	20%{color:mediumvioletred}
+	30%{color:red}
+	40%{color:orangered}
+	50%{color:orange}
+	60%{color:yellow}
+	70%{color:greenyellow}
+	80%{color:green}
+	90%{color:lightgreen}
+	100%{color:cadetblue}
 }
