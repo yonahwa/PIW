@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Cr�er un tableau(table)</title>
+    <script src="Labo4,2.js"></script>
+    
+
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <form>
+
+        <label for="ligne">Quelle ligne voulez vous choisir? : </label>
+        <input type="number" id="ligne" min="1" max="10" required /><br />
+
+        <label for="cell">Quelle case de la ligne voulez vous? : </label>
+        <input type="number" id="cell" min="1" max="10" required /><br />
+
+        <input type="button" onclick="createTable()"
+               value="Cr�er le tableau">
+    </form>
+
+    
+
+</body>
+</html>

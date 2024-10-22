@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="Labo5.css" />
+    </head>
+    
+    <body>
+        <form>
+            <!--Le Nom-->
+            <label for="name">Nom Complet* : </label>
+            <input type="text" id="name" required /> <br />
+            
+
+            <!--L'email-->
+            <label for="email">Adresse e-mail* : </label>
+            <input type="email" id="email" required /><br />
+
+            <!--La Destination-->
+            <label for="city">Choisissez votre destination* : </label>
+            <select id="city">
+                <option>Tokyo</option>
+                <option value="oui,oui,baquette">Paris</option>
+                <option value="tu n'ira jamais">Singapour</option>
+            </select><br />
+
+            <!--L'arrivée-->
+            <label for="arival date">Date d'arriver* : </label>
+            <input type="date" id="arrival date" required /><br />
+
+            <!--Le nombre de personne pour le voyage-->
+            <label for="nPersonne">Nombre de personne* : </label>
+            <input type="number" id="nPersonne" min="1" max="10" required /><br />
+
+            <!--Le choix d'option pendant le voyage-->
+            <label for="options">Quelles options souhaitez vous choisir* :</label><br />
+            <input type="checkbox" id="hebergement" />
+            <label for="hebergement">Hebergement</label><br />
+            <input type="checkbox" id="resto" />
+            <label for="resto">Restaurant</label><br />
+            <input type="checkbox" id="tourisme" />
+            <label for="tourisme">Visite Touristique</label><br />
+            <input type="checkbox" id="bateau" />
+            <label for="bateau">Location de Bateau</label><br />
+
+            <!--La Reduc-->
+            <label for="reductions">Code de reduction : </label>
+            <input type="text" id="reduc" /><br />
+            <!--Les conditions générales-->
+            <label for="condition">Conditions générales* :</label><br />
+            <input type="radio" id="yesCondition" />
+            <label for="yesCondition">J'accepte les Condition</label>
+            <input type="radio" id="noChoice" />
+            <label for="noChoice"> Pas le choix</label><br />
+            <!--La fin-->
+            <input type="submit" value="Completer la Reservation" /><br />
+        </form>
+
+
+        <script src="Labo5.js"></script>
+    </body>
+
+
+</html>

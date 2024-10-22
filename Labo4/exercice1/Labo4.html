@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Changer le contenu d'une cellule</title>
+    <script src="Labo4.js"></script>
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+        <tr>
+            <td>Row3 cell1</td>
+            <td>Row3 cell2</td>
+        </tr>
+
+    </table><br />
+    <form>
+
+        <label for="ligne">Quelle ligne voulez vous choisir? : </label>
+        <input type="number" id="ligne" min="1" max="2" required /><br />
+
+        <label for="cell">Quelle case de la ligne voulez vous? : </label>
+        <input type="number" id="cell" min="1" max="2" required /><br />
+
+        <label for="content">Que voulez vous mettre dedans? : </label>
+        <input type="text" id="content" /><br />
+
+        <input type="button" onclick="changeContent()"
+               value="Changer le contenu">
+    </form>
+    
+</body>
+</html>
